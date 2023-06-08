@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
 # require File.expand_path(__FILE__).gsub("bin/git-gpt", "lib/git-gpt")
-require 'git-gpt'
+require 'git/gpt'
 
-GitGpt.new.run(ARGV)
+Git::Gpt::CLI.new.run(ARGV)

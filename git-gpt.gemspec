@@ -28,13 +28,14 @@ Gem::Specification.new do |spec|
     end
   end
   spec.bindir = "exe"
-  spec.executables = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  # spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
+  # spec.executables = spec.files.grep(%r{bin/git-gpt}) { |f| File.basename(f) }
+  spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
   # Uncomment to register a new dependency of your gem
-  spec.add_development_dependency "rspec"
-  spec.add_dependency "thor"
+  # spec.add_development_dependency "rspec"
+  # spec.add_dependency "thor"
+  spec.add_dependency "ruby-openai", "~> 4.0"
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
