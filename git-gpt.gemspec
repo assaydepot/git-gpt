@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["Chris Petersen"]
   spec.email = ["chris@petersen.io"]
 
-  spec.summary = "Use GPT-4 to generate commit messages"
-  spec.description = "Use GPT-4 to generate commit messages"
+  spec.summary = "Use ChatGPT to write your commit messages"
+  spec.description = "Use ChatGPT to write your commit messages"
   spec.homepage = "https://github.com/assaydepot/git-gpt"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
