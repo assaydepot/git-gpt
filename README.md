@@ -35,7 +35,7 @@ In the above example, `file1`, `file2`, and `file3` are placeholders for the fil
 
 Best practice is to set the `OPENAI_API_KEY` environment veriable. Optionally, you can set `OPENAI_ORGANIZATION_ID`.
 
-## Advanced Basic Configuration
+## Advanced Configuration
 
 By default `git gpt` uses `gpt-3.5-turbo` with a temperature of `0.7`. You can find the default prompt [here](https://github.com/assaydepot/git-gpt/blob/main/lib/git/gpt.rb#L12-L26). If you'd like to change the default settings, you can add a `.git-gpt-config.yml` file in your git repository. `git-gpt` will look for that file in the current directory, any parent directory (all the way to `/`) and your `HOME` directory. It will look in that order and use the first one it finds. The structure of the YAML file is as follows, all keys are optional.
 
