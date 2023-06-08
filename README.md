@@ -60,7 +60,7 @@ prompt: >
   Please write a commit message for this change. Format the commit message using markdown. You may use bullet points. Please comment specifically on any files with significant changes.
 ```
 
-See a real example [here](https://github.com/assaydepot/git-gpt/blob/main/git-gpt.gemspec).
+See a real example [here](https://github.com/assaydepot/git-gpt/blob/main/.git-gpt-config.yml).
 
 ## Contributing
 
