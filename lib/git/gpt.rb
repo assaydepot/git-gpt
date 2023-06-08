@@ -2,6 +2,7 @@
 
 require_relative "gpt/version"
 require 'yaml'
+require 'json'
 require 'openai'
 
 module Git
