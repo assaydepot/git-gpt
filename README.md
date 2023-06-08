@@ -31,6 +31,12 @@ git gpt file1 file2 file3
 
 In the above example, `file1`, `file2`, and `file3` are placeholders for the file names you want to focus on. This will generate a commit message based on the changes in those files only.
 
+### USAGE NOTE
+
+`git gpt` does not actually commit your code, it simply prints a commit message that you can choose to use or not. If you run it multiple times, you will likely get different results.
+
+By default it asks ChatGPT to create short messages. If you like longer or multiline messages, you can adjust your prompt (see Advanced Configuration below).
+
 ## Basic Configuration
 
 Best practice is to set the `OPENAI_API_KEY` environment veriable. Optionally, you can set `OPENAI_ORGANIZATION_ID`.
