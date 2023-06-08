@@ -70,7 +70,7 @@ See a real example [here](https://github.com/assaydepot/git-gpt/blob/main/.git-g
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/your-github-username/git-gpt. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/assaydepot/git-gpt. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
 
 ## License
 
