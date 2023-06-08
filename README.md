@@ -37,7 +37,7 @@ Best practice is to set the `OPENAI_API_KEY` environment veriable. Optionally, y
 
 ## Advanced Basic Configuration
 
-By default `git gpt` uses `gpt-3.5-turbo` with a temperature of `0.7`. You can find the default prompt [here](/blob/main/lib/git/gpt.rb#L12-L26). If you'd like to change the default settings, you can add a `.git-gpt-config.yml` file in your git repository. `git-gpt` will look for that file in the current directory, any parent directory (all the way to `/`) and your `HOME` directory. It will look in that order and use the first one it finds. The structure of the YAML file is as follows, all keys are optional.
+By default `git gpt` uses `gpt-3.5-turbo` with a temperature of `0.7`. You can find the default prompt [here](blob/main/lib/git/gpt.rb#L12-L26). If you'd like to change the default settings, you can add a `.git-gpt-config.yml` file in your git repository. `git-gpt` will look for that file in the current directory, any parent directory (all the way to `/`) and your `HOME` directory. It will look in that order and use the first one it finds. The structure of the YAML file is as follows, all keys are optional.
 
 ```yaml
 model: gpt-4
@@ -48,17 +48,19 @@ prompt: >
   You are a software engineer working on a project. You write diligent and detailed commit messages. You are working on a new feature and you are ready to commit your changes.
 
   The current git status is:
-  ```
+  \```
   $GIT_STATUS
-  ```
+  \```
 
   The current git diff is:
-  ```
+  \```
   $GIT_DIFF
-  ```
+  \```
 
   Please write a commit message for this change. Format the commit message using markdown. You may use bullet points. Please comment specifically on any files with significant changes.
 ```
+
+See a real example [here](blob/main/git-gpt.gemspec).
 
 ## Contributing
 
