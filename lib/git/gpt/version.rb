@@ -2,6 +2,6 @@
 
 module Git
   module Gpt
-    VERSION = "0.0.4"
+    VERSION = "0.0.5"
   end
 end
