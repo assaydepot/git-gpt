@@ -10,21 +10,19 @@ module Git
     class Error < StandardError; end
     class CLI
       def run(argv=nil)
-        prompt =<<-EOS
-        You are a software engineer working on a project. You write diligent and detailed commit messages. You are working on a new feature and you are ready to commit your changes.
+        prompt =<<EOS
+You are a software engineer working on a project. You write diligent and detailed commit messages. You are working on a new feature and you are ready to commit your changes.
 
-        The current git status is:
-        ```
-        $GIT_STATUS
-        ```
+The current git status is:
 
-        The current git diff is:
-        ```
-        $GIT_DIFF
-        ```
+$GIT_STATUS
 
-        Please write a commit message for this change. The commit message should be a single sentence. The commit message should start with a capital letter. The commit message should end with a period. The commit message should be 50 characters or less.
-        EOS
+The current git diff is:
+
+$GIT_DIFF
+
+Please write a commit message for this change. Format the commit message using markdown. You may use bullet points. Please comment specifically on any files with significant changes.
+EOS
 
         config = { 
           "model" => "gpt-3.5-turbo", 
