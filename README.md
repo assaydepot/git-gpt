@@ -54,14 +54,12 @@ prompt: >
   You are a software engineer working on a project. You write diligent and detailed commit messages. You are working on a new feature and you are ready to commit your changes.
 
   The current git status is:
-  \```
+
   $GIT_STATUS
-  \```
 
   The current git diff is:
-  \```
+
   $GIT_DIFF
-  \```
 
   Please write a commit message for this change. Format the commit message using markdown. You may use bullet points. Please comment specifically on any files with significant changes.
 ```
