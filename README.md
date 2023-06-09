@@ -35,7 +35,11 @@ In the above example, `file1`, `file2`, and `file3` are placeholders for the fil
 
 `git gpt` does not actually commit your code, it simply prints a commit message that you can choose to use or not. If you run it multiple times, you will likely get different results.
 
-By default it asks ChatGPT to create short messages. If you like longer or multiline messages, you can adjust your prompt (see Advanced Configuration below).
+By default it asks ChatGPT to create longer messages with bullet points for each file with significant changes. I recommend setting `GIT_EDITOR=vim` and pasting your commit messages into the editor. If you like shorter or single line messages, you can adjust your prompt to something like the following (see Advanced Configuration below):
+
+```
+Please write a commit message for this change. The commit message should be a single sentence. The commit message should start with a capital letter. The commit message should end with a period. The commit message should be 50 characters or less.
+```
 
 ## Basic Configuration
 
