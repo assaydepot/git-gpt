@@ -66,7 +66,7 @@ EOS
           paths << [path, filename].join(File::SEPARATOR)
         end
         paths << [ENV["HOME"], filename].join(File::SEPARATOR) if ENV["HOME"]
-        result = paths.detect { |path| File.exists?(path) }
+        result = paths.detect { |path| File.exist?(path) }
         result
       end
     end
