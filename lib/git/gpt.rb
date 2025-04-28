@@ -24,15 +24,15 @@ $GIT_DIFF
 Please write a commit message for this change. Format the commit message using markdown. You may use bullet points. Please comment specifically on any files with significant changes.
 EOS
 
-        config = { 
-          "model" => "gpt-3.5-turbo", 
-          "temperature" => 0.7, 
+        config = {
+          "model" => "gpt-3.5-turbo",
+          "temperature" => 0.7,
           "prompt" => prompt,
           "openai_api_key" => ENV["OPENAI_API_KEY"],
           "openai_organization_id" => ENV["OPENAI_ORGANIZATION_ID"]
         }
         config_filename = find_file(".git-gpt-config.yml")
-        config_file = YAML.load_file(".git-gpt-config.yml") if config_filename
+        config_file = YAML.load_file(config_filename) if config_filename
         config.merge!(config_file) if config_file
 
         if config["openai_api_key"].nil?
